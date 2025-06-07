@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calisa Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <h1 class="logo">Calisa Academy</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+      <div class="container">
+        <h2>Grooming Young Minds for Greatness</h2>
+        <p>Calisa Academy is where learning begins with purpose and joy.</p>
+        <a href="#contact" class="btn">Enroll Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="container">
+        <h3>About Us</h3>
+        <p id="about-text">
+          Calisa Academy is a warm and friendly learning environment where
+          children grow academically and emotionally. We focus on nurturing
+          every child through play, creativity, and curiosity.
+        </p>
+      </div>
+    </section>
+
+    <section id="classes" class="section light" data-aos="fade-right">
+      <div class="container">
+        <h3>Our Classes</h3>
+        <div class="cards">
+          <div class="card red">
+            <h4>Nursery 1 & 2</h4>
+            <p>Foundational skills through games, music, and art.</p>
+          </div>
+          <div class="card yellow">
+            <h4>Primary 1 – 3</h4>
+            <p>Building literacy, numeracy, and confidence.</p>
+          </div>
+          <div class="card blue">
+            <h4>Primary 4 – 6</h4>
+            <p>Preparing for excellence in secondary school and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" data-aos="zoom-in">
+      <div class="container">
+        <h3>Gallery</h3>
+        <div class="gallery">
+          <img src="./img/main-school.jpg" alt="Kids Learning" />
+          <img src="./img/play-school.jpg" alt="School Event" />
+          <img
+            src="./img/kids.jpg"
+            alt="Teachers & Pupils"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section light" data-aos="fade-up">
+      <div class="container">
+        <h3>Contact Us</h3>
+        <p>📍 123 Bright Street, Lagos</p>
+        <p>📞 0801 234 5678</p>
+        <p>📧 sunshinekids@example.com</p>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Calisa Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thanks for reaching out! We'll get back to you soon.");
+          this.reset();
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
